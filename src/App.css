@@ -1,3 +1,142 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Navigation Styles */
+.nav {
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Product Styles */
+.product-container {
+  background-color: #45a049;
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product-detail {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-detail h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.product-detail p {
+  margin: 8px 0;
+}
+
+.product-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Modal Styles */
+.modal {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-product-btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-detail {
+    width: 100%;
+  }
+
+  .modal {
+    max-width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +175,287 @@
     transform: rotate(360deg);
   }
 }
+
+
+.login-container {
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.login-container h1 {
+  text-align: center;
+  color: green;
+
+}
+
+.login-container label {
+  display: block;
+  margin: 10px 0;
+  color: #555;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.login-container button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+.Heading {
+  display: flex;
+  
+}
+.Heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #8dff85;
+  color: #fff;
+}
+
+.Heading h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+/* Delete.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+
+/* Add more styles as needed */
+
+
+/* Add this CSS to your stylesheet or component */
+.modal-overlays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modals {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Add more styles as needed */
+
+
+/* ... (previous styles) */
+
+
+
+.update-form input {
+  margin-bottom: 20px;
+
+}
+.order-form input {
+  margin-bottom: 20px;
+}
+
+
+
+/* ... (other styles) */
+
+
+
+
+
+/* Add these styles to your existing CSS file */
+
+.product-container {
+
+  padding: 20px;
+  background-color: #45a049;
+}
+
+.create-product-btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+} */
+
+.product-detail {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more styles as needed */
+
+
+
+
+
+.cart-title {
+  text-align: center;
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+.item-title {
+  font-weight: bold;
+}
+
+
+/* ... (previous styles) */
+
+.cart-list {
+  display: flex;
+  flex-wrap: wrap;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+}
+
+.cart-item {
+  flex: 1 1 300px; /* Adjust the card width as needed */
+  border: 1px solid #ddd;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.price, .quantity, .date-ordered, .total-price {
+  margin: 8px 0;
+}
+
+.cart-container {
+  background-color: #7bf781;
+}
+
+
+
+
+
+
+
+
